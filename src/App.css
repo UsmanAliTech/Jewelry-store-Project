@@ -1,1 +1,8 @@
+body {
+  -ms-overflow-style: none;
+  overflow: auto;
+}
 
+body::-webkit-scrollbar {
+  display: none;
+}

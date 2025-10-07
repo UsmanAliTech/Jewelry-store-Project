@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCart4 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -30,7 +31,7 @@ export const Navbar = () => {
             <li className="nav-item"><Link className="nav-link" to="/collection">Collection</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/cart">Cart</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/cart"><BsCart4 /></Link></li>
           </ul>
 
           <form className="d-flex ms-lg-3 mt-3 mt-lg-0 search-form">

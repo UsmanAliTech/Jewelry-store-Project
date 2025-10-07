@@ -30,14 +30,22 @@
 }
 
 .hero-cta-btn {
-    border-radius: 0 !important; 
+    
     border-width: 2px !important;
+     border-radius: 30px;
+  background: black;
+  color: gold;
+  font-weight: 600;
+  padding: 8px 18px;
+  border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-cta-btn:hover {
-    background-color: #fff !important;
-    color: #000 !important;
+  background-color: gold;
+  color: black;
+  border-radius: 10px solid rgb(253, 251, 251) !important;  
+    
 }
 
 .collection-card {

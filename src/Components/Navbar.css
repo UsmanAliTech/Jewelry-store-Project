@@ -67,7 +67,7 @@ main, .content, .container-fluid, .page-content {
 }
 
 .nav-links .nav-link:hover {
-  color: silver
+  color: goldenrod
    !important;
 }
 
@@ -78,9 +78,9 @@ main, .content, .container-fluid, .page-content {
 .search-form .search-input {
   border-radius: 30px;
   padding: 8px 14px;
-  border: 1px solid silver;
+  border: 1px solid gold;
   background-color: transparent;
-  color: white;
+  color: gold;
   width: 180px;
   transition: width 0.3s ease;
 }
@@ -88,20 +88,21 @@ main, .content, .container-fluid, .page-content {
 .search-form .search-input:focus {
   width: 220px;
   outline: none;
-  border-color: silver;
+  border-color: goldenrod;
 }
 
 .search-form .search-input::placeholder {
-  color: #bbb;
+  color: gold;
 }
 
 .search-form .search-btn {
   border-radius: 30px;
-  background: silver;
-  color: #000;
+  background: black;
+  color: gold;
   font-weight: 600;
   padding: 8px 18px;
   border: none;
+  border: 1px solid white;
   transition: all 0.3s ease;
 }
 
