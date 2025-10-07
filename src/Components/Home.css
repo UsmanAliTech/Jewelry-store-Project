@@ -1,0 +1,102 @@
+
+
+.hero-banner {
+    background-image: url('/public/unnamed (3).png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 100vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+.hero-banner .container {
+    z-index: 2; 
+}
+
+.hero-cta-btn {
+    border-radius: 0 !important; 
+    border-width: 2px !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-cta-btn:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.collection-card {
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-img-wrapper {
+    overflow: hidden; 
+}
+
+.card-img-zoom {
+    transition: transform 0.5s ease-in-out;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.collection-card:hover .card-img-zoom {
+    transform: scale(1.05); 
+}
+
+.shop-link {
+    font-weight: 500;
+    text-decoration: none; 
+    position: relative;
+}
+
+.shop-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+.shop-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #000;
+}
+
+.about-snippet-block {
+    background-color: #f8f8f8; 
+}
+
+.about-cta-btn {
+    border-radius: 0 !important;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
+
+.img-fluid {
+    filter: brightness(0.95); 
+}
