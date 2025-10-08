@@ -24,26 +24,30 @@
     background-color: rgba(0, 0, 0, 0.3); 
     z-index: 1;
 }
-
+.font{
+    font-family: 'Times New Roman', Times, serif;
+}
 .hero-banner .container {
     z-index: 2; 
 }
 
 .hero-cta-btn {
     
-    border-width: 2px !important;
-     border-radius: 30px;
+     border-width: 2px !important;
+     border-radius: 30px !important;
   background: black;
   color: gold;
   font-weight: 600;
   padding: 8px 18px;
+  justify-content: center !important;
+  align-items: center !important;
   border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-cta-btn:hover {
-  background-color: gold;
-  color: black;
+  background-color: gold !important;
+  color: black !important;
   border-radius: 10px solid rgb(253, 251, 251) !important;  
     
 }
@@ -96,15 +100,28 @@
 }
 
 .about-snippet-block {
-    background-color: #f8f8f8; 
+    background-color: #2e2b2b; 
+    color: white;
 }
 
 .about-cta-btn {
-    border-radius: 0 !important;
-    padding: 10px 30px;
-    font-size: 1.1rem;
+    
+    border-width: 2px !important;
+     border-radius: 30px !important;
+  background: black;
+  color: gold;
+  font-weight: 600;
+  padding: 8px 18px;
+  justify-content: center !important;
+  align-items: center !important;
+  border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.about-cta-btn:hover{
+     background-color: gold;
+  color: black;
+  border-radius: 10px solid rgb(253, 251, 251) !important;  
+}
 .img-fluid {
     filter: brightness(0.95); 
 }

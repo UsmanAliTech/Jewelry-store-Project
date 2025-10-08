@@ -4,13 +4,20 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
+
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg mb-lg-0 mb-5 sticky-top modern-navbar">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
-         
-          <span className="brand-text">💎 JewelLux</span>
+          <img 
+            src='public/logonobg.png'
+            alt="Aurora Jewels Brand Logo" 
+            className="navbar-logo"
+          />
+          <span className="brand-name-text" style={{ marginLeft: '5px', fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>
+            JewelLux
+          </span>
         </Link>
         <button
           className="navbar-toggler custom-toggler"
