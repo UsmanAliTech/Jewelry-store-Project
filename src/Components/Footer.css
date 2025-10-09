@@ -1,3 +1,156 @@
-.quick{
-   
-} 
+.footer-main {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+    font-family: Arial, sans-serif;
+}
+
+.footer-heading {
+    font-size: 1.15rem;
+    font-weight: 700 !important;
+    color: gold;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.footer-col {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 150px;
+}
+
+.footer-col:last-child {
+    border-right: none;
+}
+
+.connect-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.connect-content {
+    width: 100%;
+    max-width: 250px;
+}
+
+.newsletter-title {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-input {
+    background-color: transparent !important;
+    border: 1px solid #444 !important;
+    color: #fff !important;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    height: 38px;
+}
+
+.footer-input::placeholder {
+    color: #aaa;
+}
+
+.footer-subscribe-btn {
+    background-color: gold !important;
+    color: #1a1a1a !important;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    height: 38px;
+}
+
+.footer-subscribe-btn:hover {
+    background-color: goldenrod !important;
+}
+
+.policy-links {
+    padding: 0;
+    text-align: center;
+}
+
+.policy-links li {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+    .footer-col {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+    .footer-col:last-child {
+        border-bottom: none;
+    }
+    .footer-heading {
+        text-align: center;
+    }
+}
+
+.footer-links {
+    padding: 0;
+    text-align: center;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a, .policy-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover, .policy-links a:hover {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 28px;
+    color: gold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.footer-logo {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+    color: #ccc !important;
+}
+
+.more {
+    display: none;
+}

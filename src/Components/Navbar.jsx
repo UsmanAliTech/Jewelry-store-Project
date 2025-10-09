@@ -10,11 +10,6 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg mb-lg-0 mb-5 sticky-top modern-navbar">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <img 
-            src='public/logonobg.png'
-            alt="Aurora Jewels Brand Logo" 
-            className="navbar-logo"
-          />
           <span className="brand-name-text" style={{ marginLeft: '5px', fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>
             JewelLux
           </span>
