@@ -1,0 +1,46 @@
+/* src/App.css (or similar stylesheet) */
+
+/* 1. Desktop (>= 992px) - Make the Offcanvas behave like a true fixed sidebar 
+  Note: Bootstrap's .offcanvas-lg makes the content visible, but we need to define its position/size.
+*/
+@media (min-width: 992px) {
+    /* Target the offcanvas element when it's always visible on large screens */
+    #productSidebar {
+        /* Override default Offcanvas properties */
+        position: sticky; /* Keeps it in view while content scrolls */
+        top: 0;
+        height: 100vh;
+        width: 250px; /* Define fixed width */
+        min-width: 250px;
+        transform: none !important; /* Ensure it stays in place, overriding transition */
+        visibility: visible !important; /* Ensure it's never hidden */
+        z-index: 1020; /* Keep it above main content but below a navbar if one exists */
+        border-right: 1px solid #ddd;
+    }
+}
+
+/* 2. Mobile/Tablet (< 992px) - Ensure content flows naturally 
+*/
+@media (max-width: 991.98px) {
+    /* On mobile, the main content takes up the full width, and the Offcanvas overlays it */
+    .main-content {
+        width: 100%;
+    }
+}
+
+/* Optional: Better styling for the list group in the sidebar */
+.list-group-item {
+    border-left: 3px solid transparent;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item.active {
+    background-color: #0d6efd; /* Primary color */
+    border-color: #0d6efd; 
+    color: white;
+}

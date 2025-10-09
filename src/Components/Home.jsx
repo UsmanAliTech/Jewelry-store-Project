@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring';
 import "./Home.css";
+import Scrooltop from './Scrooltop';
 import Footer from './Footer';
 
 const collections = [
@@ -11,28 +12,28 @@ const collections = [
 ];
 const Collection2=[
   {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:"public/New folder/195_1701948175_6571ab0f48a78_33271_1-605690724506-1435884857171.jpg"
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:"public/New folder/shop/137_1711812711_6608306747c63_34306_1-682809212488.jpg"
   },
   {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/447_1701948233_6571ab49a7ead_33433_1-213430184550-1224369744924.jpg'
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/shop/195_1701948175_6571ab0f48a78_33271_1-605690724506-1435884857171.jpg'
   },
   {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/572_1701948004_6571aa649c1b8_34211_1-733790799318-60826687811.jpg'
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/shop/572_1701948004_6571aa649c1b8_34211_1-733790799318-60826687811.jpg'
   },
     {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:"public/New folder/577_1701947983_6571aa4f9d05e_35282_1-1129141914634-1601175406672.jpg"
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:"public/New folder/shop/577_1701947983_6571aa4f9d05e_35282_1-1129141914634-1601175406672.jpg"
   },
   {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/599_1701948175_6571ab0ff2ea8_33272_1-1427606525272-1208214814320.jpg'
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/shop/599_1701948175_6571ab0ff2ea8_33272_1-1427606525272-1208214814320.jpg'
   },
   {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/752_1701948699_6571ad1be9811_22351_1-1074643469331-111637259953.jpg'
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/shop/752_1701948699_6571ad1be9811_22351_1-1074643469331-111637259953.jpg'
   },
    {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/699_1701936725_65717e551f651_13152_1-722542373154-1020985463416.jpeg'
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/shop/699_1701936725_65717e551f651_13152_1-722542373154-1020985463416.jpeg'
   },
   {
-    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/954_1720278230_66895cd680395_37054_1-921470052556.jpg'
+    tittle:'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image:'public/New folder/shop/954_1720278230_66895cd680395_37054_1-921470052556.jpg'
   }
 ]
 const AnimatedHero = () => {
@@ -145,6 +146,7 @@ const Home = () => {
         ))}
       </div>
       </div>
+    <Scrooltop />
     
  <Footer/>
     </div>

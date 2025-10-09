@@ -10,29 +10,29 @@ import About from './Components/About'
 import Contact from './Components/Contact'
 import Collection from './Components/Collection'
 import Cart from './Components/Cart'
+import Scrooltop from './Components/Scrooltop'
+import Sidebar from './Components/Sidebar';
 import Shopdata from './Components/Shopdata';
-
 function App() {
   return (
     <>
       <BrowserRouter>
-       
         <Navbar /> 
         
         <Routes>
-          
           <Route path='/' element={<Home />} />
-            <Route path='/shop' element={<Shop products={Shopdata} />} />
-          <Route path='/shop' element={<Shop />} /> 
+          
+          {/* KEEP ONLY THIS LINE: The one that correctly passes the data */}
+          <Route path='/shop' element={<Shop products={Shopdata} />} /> 
+          
+          {/* REMOVE THE DUPLICATE ROUTE: <Route path='/shop' element={<Shop />} /> */}
+
           <Route path='/collection' element={<Collection />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/cart' element={<Cart />} />
         </Routes>
         
-        
-       
-
       </BrowserRouter>
     </>
   )
