@@ -1,10 +1,14 @@
 import React from 'react'
-
-const Collection = () => {
+import "./Collection.css"
+import Navbar2 from './Navbar2'
+function Collection() {
   return (
-    <div>
+    <>
+    <div className='main'>
       
-    </div>
+    </div><br />
+    <Navbar2/>
+    </>
   )
 }
 

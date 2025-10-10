@@ -1,0 +1,13 @@
+.main{
+     background-image: url('public/New folder/Collection/unnamed.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 100vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}

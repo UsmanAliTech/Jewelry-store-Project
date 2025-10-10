@@ -1,32 +1,30 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './App.css'
-import { Navbar } from './Components/Navbar'
-import Home from './Components/Home'
-import Shop from './Components/Shop' 
-import About from './Components/About'
-import Contact from './Components/Contact'
-import Collection from './Components/Collection'
-import Cart from './Components/Cart'
-import Scrooltop from './Components/Scrooltop'
-import Sidebar from './Components/Sidebar';
-import Shopdata from './Components/Shopdata';
+import { Navbar } from './components/Navbar' 
+import Home from './components/Home'
+import Shop from './components/Shop' 
+import About from './components/About'
+import Contact from './components/Contact'
+import Collection from './components/Collection'
+import Cart from './components/Cart'
+import Navbar2 from './Components/Navbar2';
+import Scrooltop from './Components/Scrooltop';
+import Ringdata from './Components/Ringdata';
+import Shopdata from './components/Shopdata';
+import Ring from './Components/Ring';
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar /> 
-        
         <Routes>
-          <Route path='/' element={<Home />} />
-          
-          {/* KEEP ONLY THIS LINE: The one that correctly passes the data */}
+          <Route path='/' element={<Home />} /> 
+          <Route path='/home' element={<Home />} />
           <Route path='/shop' element={<Shop products={Shopdata} />} /> 
-          
-          {/* REMOVE THE DUPLICATE ROUTE: <Route path='/shop' element={<Shop />} /> */}
-
+          <Route path='/rings' element={<Ring />} /> 
           <Route path='/collection' element={<Collection />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />

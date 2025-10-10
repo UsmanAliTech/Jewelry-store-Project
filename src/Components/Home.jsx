@@ -72,7 +72,7 @@ const CollectionCard = ({ title, image, link }) => {
         </div>
         <Card.Body className="text-center p-4">
           <Card.Title className="h5 fw-normal">{title}</Card.Title>
-          <Button variant="link" className="text-dark p-0 mt-2 shop-link font">Shop Collection →</Button>
+          <Button variant="link" className="text-dark p-0 mt-2 shop-link font" to='shop'>Shop Collection →</Button>
         </Card.Body>
       </Card>
     </Col>
