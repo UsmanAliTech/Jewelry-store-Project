@@ -6,9 +6,9 @@ import Scrooltop from './Scrooltop';
 import Footer from './Footer';
 
 const collections = [
-  { title: "The Lumina Ring Collection", image: "/public/premium_photo-1681276169450-4504a2442173 (1).avif", link: "/shop/rings" },
-  { title: "Ethereal Necklaces", image: "/public/premium_photo-1681276170281-cf50a487a1b7.avif", link: "/shop/necklaces" },
-  { title: "New Arrivals: The Zodiac", image: "/public/premium_photo-1681276170092-446cd1b5b32d.avif", link: "/shop/new" },
+  { title: "The Lumina Ring Collection", image: "/public/premium_photo-1681276169450-4504a2442173 (1).avif", link: "/shop" },
+  { title: "Ethereal Necklaces", image: "/public/premium_photo-1681276170281-cf50a487a1b7.avif", link: "/shop" },
+  { title: "New Arrivals: The Zodiac", image: "/public/premium_photo-1681276170092-446cd1b5b32d.avif", link: "/shop" },
 ];
 const Collection2=[
   {
@@ -54,7 +54,7 @@ const AnimatedHero = () => {
           Discover the Jewellux Signature Collection.
         </animated.p>
         <animated.div style={props}>
-          <Button variant="outline-light" size="lg" className="font ">
+          <Button variant="outline-light" size="lg" to='/Collection' className="font hero-cta-btn">
             Explore Now
           </Button>
         </animated.div>
@@ -72,7 +72,7 @@ const CollectionCard = ({ title, image, link }) => {
         </div>
         <Card.Body className="text-center p-4">
           <Card.Title className="h5 fw-normal">{title}</Card.Title>
-          <Button variant="link" className="text-dark p-0 mt-2 shop-link font" to='shop'>Shop Collection →</Button>
+          <div variant="link" className="text-dark  p-0 mt-2 shop-link font" to='/shop'>Shop Collection →</div>
         </Card.Body>
       </Card>
     </Col>

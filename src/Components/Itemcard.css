@@ -1,0 +1,78 @@
+/* * Itemcard.css
+ * Styles for the Itemcard component to achieve a premium, shop-like look.
+ */
+
+/* General Card Container Styling */
+.product-card {
+    /* Base styling inherited from Itemcard.jsx's Bootstrap classes */
+    height: 100%; 
+    border: none;
+    border-radius: 0.75rem; /* rounded-lg equivalent */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    background-color: #ffffff; /* Clean white background */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* shadow-md equivalent */
+}
+
+/* Hover Effect for Premium Feel */
+.product-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); /* hover:shadow-lg equivalent */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Product Image Styling */
+.card-img-top {
+    width: 100%;
+    /* The height and object-fit are applied inline in the JSX, 
+       but we ensure the image container is ready */
+}
+
+/* Card Body (Text Content) Styling */
+.card-body {
+    padding: 1.5rem; /* Padding for the inner content */
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #333333; /* Darker title text */
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #6c757d; /* Muted text color */
+}
+
+/* Price and Button Container */
+.card-footer-flex {
+    /* Using d-flex from Bootstrap, this just ensures separation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin-top: auto;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Price Display */
+.price-text {
+    color: #007bff; /* Primary blue for price emphasis */
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Button Styling (Matching the yellow button in your shop image) */
+.btn-view-details {
+    background-color: #ffc107; /* Bootstrap 'warning' yellow */
+    color: #212529; /* Dark text for contrast */
+    border: none;
+    border-radius: 50rem; /* rounded-pill equivalent */
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view-details:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    color: #212529;
+}
