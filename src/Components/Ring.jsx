@@ -1,30 +1,24 @@
-import React from 'react'
+import React from "react";
+import Itemcard from "./Itemcard";
+import Ringdata from "./Ringdata";
+import "./Ring.css";
+import Footer from "./Footer";
+import Scrooltop from "./Scrooltop";
 
-import Ringdata from './Ringdata'
-import Itemcard from './Itemcard'
-
-
-const Ring = () => {
-
-    if (!Ringdata || Ringdata.length === 0) {
-
-        return (
-            <div className="container mt-5 pt-5 text-center">
-                <h2 className="text-dark">Rings Collection</h2>
-                <p className="lead text-muted">No ring products are currently available.</p>
-            </div>
-        );
-    }
-    return (
-        <div className="container mt-5 pt-5">
-            <h2 className="h1 mt-5 text-dark">Rings Collection ({Ringdata.length} Items)</h2>
-            <div className="row">
-                {Ringdata.map(item => (
-                    <Itemcard key={item.id} item={item} />
-                ))}
-            </div>
-        </div>
-    );
+const Rings = () => {
+  return (
+    <>
+    <div className="container py-5 mt-5">
+      <div className="row">
+        {Ringdata.map((item, index) => (
+          <Itemcard key={index} item={item} />
+        ))}
+      </div>
+    </div>
+      <Scrooltop/>
+      <Footer/>
+    </>
+  );
 };
 
-export default Ring
+export default Rings;

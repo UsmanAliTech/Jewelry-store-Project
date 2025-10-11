@@ -88,7 +88,7 @@ const Ringdata = [
     name: "Diamond Halo Cushion Cut",
     price: "$3,800",
     description: "A large cushion-cut diamond encircled by a tight halo of smaller stones for maximum sparkle.",
-    image: "public/New folder/Collection/rings/images (1).jpeg"
+    image: "public/New folder/Collection/rings/images.jpeg"
   },
   {
     id: 14,

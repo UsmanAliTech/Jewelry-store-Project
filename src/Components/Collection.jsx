@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Collection.css"
 import Navbar2 from './Navbar2'
+import Footer from './Footer'
 function Collection() {
   return (
     <>
@@ -8,6 +9,7 @@ function Collection() {
       
     </div><br />
     <Navbar2/>
+    <Footer/>
     </>
   )
 }
