@@ -1,8 +1,11 @@
 import React from "react";
 import "./Itemcard.css";
+import { Navbar } from "react-bootstrap";
 
 function Itemcard({ item }) {
   return (
+    
+    
     <div className="col-md-4 col-sm-6 mb-4">
       <div className="item-card">
         <img src={item.image} alt={item.name} className="item-image" />
@@ -14,6 +17,7 @@ function Itemcard({ item }) {
         </div>
       </div>
     </div>
+    
   );
 }
 

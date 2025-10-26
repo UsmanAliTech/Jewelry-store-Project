@@ -2,11 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar2.css';
 import Ringdata from './Ringdata';
+import Watchesdata from './Watchesdata';
 import { FiHome, FiMaximize, FiTarget, FiMail, FiWatch, FiUser } from 'react-icons/fi';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Necklacedata from './Necklacedata';
+import Erringsdata from './Erringsdata';
 
 const Navbar2 = () => {
+  
+  const NecklacesCount=Necklacedata? Necklacedata.length:0;
+  const watchCount=Watchesdata? Watchesdata.length:0;
+  const ErringsCount=Erringsdata? Erringsdata.length:0;
   const ringCount = Ringdata ? Ringdata.length : 0;
+  
 
   return (
     <>
@@ -27,7 +35,7 @@ const Navbar2 = () => {
             className="nav-link-item d-flex flex-column flex-lg-row align-items-center text-decoration-none"
           >
             <span className="nav-icon-wrapper me-lg-2"><FiMaximize size={20} /></span>
-            <span className="fw-medium text-nowrap mt-1 mt-lg-0">Rings ({ringCount})</span>
+            <span className="fw-medium text-nowrap mt-1 mt-lg-0">Rings </span>
           </Link>
 
           <Link
@@ -51,7 +59,7 @@ const Navbar2 = () => {
             className="nav-link-item d-flex flex-column flex-lg-row align-items-center text-decoration-none"
           >
             <span className="nav-icon-wrapper me-lg-2"><FiWatch size={20} /></span>
-            <span className="fw-medium text-nowrap mt-1 mt-lg-0">Watches</span>
+            <span className="fw-medium text-nowrap mt-1 mt-lg-0">Watches   </span>
           </Link>
 
           <Link

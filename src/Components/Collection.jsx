@@ -5,8 +5,7 @@ import Footer from './Footer'
 function Collection() {
   return (
     <>
-    <div className='main'>
-      
+    <div className='main'> 
     </div><br />
     <Navbar2/>
     <Footer/>

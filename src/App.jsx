@@ -15,7 +15,12 @@ import Scrooltop from './Components/Scrooltop';
 import Ringdata from './Components/Ringdata';
 import Shopdata from './Components/Shopdata';
 import Ring from './Components/Ring';
-
+import Watches from './Components/Watches';
+import Watchesdata from './Components/Watchesdata';
+import Necklacedata from './Components/Necklacedata';
+import Necklaces from './Components/Necklases'
+import Erringsdata from './Components/Erringsdata';
+import Errings from './Components/Errings'
 function App() {
   return (
     <>
@@ -26,6 +31,9 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/shop' element={<Shop products={Shopdata} />} /> 
           <Route path='/rings' element={<Ring Itemcard={Ringdata}/>} /> 
+          <Route path='/Watches' element={<Watches Itemcard={Watchesdata}/>} /> 
+          <Route path='/necklaces' element={<Necklaces Itemcard={Necklacedata}/>} /> 
+            <Route path='/earrings' element={<Errings Itemcard={Erringsdata}/>} /> 
           <Route path='/collection' element={<Collection />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
